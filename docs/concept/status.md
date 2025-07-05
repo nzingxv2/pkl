@@ -13,7 +13,7 @@ nah sebenarnya dia ada banyak kondisi nah kondisii nya apa aja liat di bawha ini
 ---
 
 ## Tabel Off Content
-- [DONE]()
+- [DONE](#DONE)
 - [LUNAS]()
 - [BELUM JTO]()
 - [01 GAGAL BAYAR]()
@@ -36,4 +36,11 @@ angap lah di nasabah dia di bucket `c2` dan dia meng kredit pada tanggal 15, nah
 diketahui
 
 nasabah creditt pada tanggal `8/3/2025`,
-nah sekarang nasabah dia di bucket `C0` nah kan `C0`  hitungan nya ngak bayar pas setelah tanggal 15 - tanggal 15 bulan depan itu nnti hasil nya `BELUM JATUH TEMPO`. NAH AGAR HASIL NYA DONE SEBELUM TANGGAL 15 BULAN DEPAN DIA HARU UDAH BAYAR AGAR HASIL NYA `DONE` KALAU BELUM JUGA SANPAI TANGGAL 15 BULAN DEPAN BAYAR, Maka sudah di pastikan Anda Gagal Bayar dan ke bucket `C1`
+nah sekarang nasabah dia di bucket `C0` nah kan `C0`  hitungan nya ngak bayar pas setelah tanggal 15 - tanggal 15 bulan depan itu nnti hasil nya `BELUM JATUH TEMPO`. NAH AGAR HASIL NYA DONE SEBELUM TANGGAL 15 BULAN DEPAN DIA HARU UDAH BAYAR AGAR HASIL NYA `DONE` KALAU BELUM JUGA SANPAI TANGGAL 15 BULAN DEPAN BAYAR, Maka sudah di pastikan Anda Gagal Bayar dan ke bucket `C1`.
+
+
+---
+
+## LUNAS
+
+lunas ini sebenarnay mirip sama done tetapi dia agak lebih komplesk

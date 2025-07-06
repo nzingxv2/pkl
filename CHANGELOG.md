@@ -2078,3 +2078,491 @@ index 85ebf93..568cacf 100644
 ```
 </details>
 
+### 📝 docs: docs encanment v2 ([28cd2c6](https://github.com/nzingxv2/pkl/commit/28cd2c6629ac269eb8884a8d61bb1bd71a55435d))
+**Author:** nzingxv2 <nzingxv2@gmail.com>
+<details>
+<summary>Show diff</summary>
+
+```diff
+new file mode 100644
+index 0000000..e69de29
+diff --git a/CODE_OF_CONDUCT.md b/CODE_OF_CONDUCT.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/LICENSE.md b/LICENSE.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/README.md b/README.md
+index da2056b..be420ca 100644
+--- a/README.md
++++ b/README.md
+-# Headline
++# Documentation Make By Riduwan Khafidi 
+-> An awesome project.
++> An Young Administrator Working On `Juragan Gadai` 
+diff --git a/_sidebar.md b/_sidebar.md
+index 795a091..d30ef94 100644
+--- a/_sidebar.md
++++ b/_sidebar.md
+-- []
+\ No newline at end of file
++- [quickstart](./quickstart.md)
++- [Changelogs](./CHANGELOG.MD)
++- [LICENSE](LICENSE.md)
++- [CODC](./CODE_OF_CONDUCT.md)
+\ No newline at end of file
+diff --git a/index.html b/index.html
+index 568cacf..59ee8a3 100644
+--- a/index.html
++++ b/index.html
++<!DOCTYPE html>
++<html lang="id">
++  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
++  <script>
++    tailwind.config = {
++      theme: {
++        extend: {
++          colors: {
++            primary: '#42b983',
++            secondary: '#2c3e50',
++            accent: '#3eaf7c',
++            dark: '#1a1a1a',
++            light: '#f8f9fa'
++          }
++        }
++      }
++    }
++  </script>
++      --sidebar-nav-link-color: #2c3e50;
++      --sidebar-nav-link-active-color: #42b983;
++      --sidebar-nav-link-active-background: rgba(66, 185, 131, 0.1);
+-
+-    .contact-container {
+-      max-width: 600px;
++    
++    body {
++      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
++      background-color: #f8fafc;
++      color: #333;
++      overflow-x: hidden;
++    }
++    
++    #app {
++      max-width: 1200px;
++      margin: 0 auto;
++    }
++    
++    .sidebar {
++      border-right: 1px solid #eaeaea;
++    }
++    
++    .cover-main {
++      background: linear-gradient(135deg, #42b983 0%, #2c3e50 100%);
++      color: white;
++      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
++      border-radius: 0 0 20px 20px;
++      overflow: hidden;
++    }
++    
++    .cover-main h1 {
++      font-size: 3.5rem;
++      font-weight: 700;
++      margin-bottom: 1rem;
++    }
++    
++    .cover-main p {
++      font-size: 1.5rem;
++      max-width: 800px;
++      margin: 0 auto 2rem;
++    }
++    
++    .btn {
++      display: inline-block;
++      padding: 12px 28px;
++      background-color: white;
++      color: #42b983;
++      border-radius: 50px;
++      font-weight: 600;
++      text-decoration: none;
++      transition: all 0.3s ease;
++      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
++    }
++    
++    .btn:hover {
++      transform: translateY(-3px);
++      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
++      background-color: #f0fdf4;
++    }
++    
++    .markdown-section {
++      padding: 2rem 3rem;
++      background: white;
++      border-radius: 12px;
++      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+-      padding: 1rem;
+-      border-radius: 8px;
+-      background: #f9f9f9;
+-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
++      max-width: 900px;
++    }
++    
++    .contact-container {
++      max-width: 700px;
++      margin: 3rem auto;
++      padding: 2rem;
++      border-radius: 16px;
++      background: linear-gradient(145deg, #ffffff, #f0f7fb);
++      box-shadow: 0 8px 30px rgba(66, 185, 131, 0.15);
++      position: relative;
++      overflow: hidden;
+-
++    
++    .contact-container::before {
++      content: "";
++      position: absolute;
++      top: -50px;
++      right: -50px;
++      width: 150px;
++      height: 150px;
++      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="none" stroke="rgba(66, 185, 131, 0.1)" stroke-width="2" d="M20,20 Q40,5 60,20 T100,20 Q85,40 100,60 T100,100 Q60,85 40,100 T0,100 Q5,60 0,40 T0,0 Q20,20 40,5 Z"/></svg>');
++      background-size: contain;
++      z-index: 0;
++    }
++    
+-      color: var(--theme-color, #42b983);
+-      margin-bottom: 0.5rem;
++      color: #2c3e50;
++      font-size: 2.2rem;
++      margin-bottom: 1rem;
++      position: relative;
++      z-index: 1;
+-
++    
+-      margin-bottom: 1.5rem;
+-      color: #666;
++      color: #4a5568;
++      margin-bottom: 2rem;
++      font-size: 1.1rem;
++      position: relative;
++      z-index: 1;
+-
++    
+-      gap: 1rem;
++      gap: 1.2rem;
++      position: relative;
++      z-index: 1;
+-
++    
++    .form-group {
++      display: flex;
++      flex-direction: column;
++      text-align: left;
++    }
++    
++    .form-group label {
++      margin-bottom: 0.5rem;
++      font-weight: 500;
++      color: #2c3e50;
++    }
++    
+-      padding: 0.75rem;
+-      border: 1px solid #ddd;
+-      border-radius: 4px;
++      padding: 1rem;
++      border: 1px solid #e2e8f0;
++      border-radius: 8px;
+-      width: 100%;
++      background: white;
++      transition: all 0.3s ease;
+-
++    
++    .contact-form input:focus,
++    .contact-form textarea:focus {
++      border-color: #42b983;
++      box-shadow: 0 0 0 3px rgba(66, 185, 131, 0.2);
++      outline: none;
++    }
++    
+-      background: var(--theme-color, #42b983);
++      background: linear-gradient(to right, #42b983, #3eaf7c);
+-      padding: 0.8rem;
+-      border-radius: 5px;
++      padding: 1rem;
++      border-radius: 8px;
+-      font-size: 1rem;
++      font-size: 1.1rem;
++      font-weight: 600;
++      transition: all 0.3s ease;
++      margin-top: 0.5rem;
+-
++    
+-      background: #36966f;
++      background: linear-gradient(to right, #3eaf7c, #36966f);
++      transform: translateY(-2px);
++      box-shadow: 0 6px 15px rgba(66, 185, 131, 0.4);
++    }
++    
++    .social-links {
++      display: flex;
++      justify-content: center;
++      gap: 1.5rem;
++      margin-top: 1.5rem;
++    }
++    
++    .social-links a {
++      display: flex;
++      align-items: center;
++      justify-content: center;
++      width: 50px;
++      height: 50px;
++      background: #f0fdf4;
++      border-radius: 50%;
++      color: #42b983;
++      font-size: 1.5rem;
++      transition: all 0.3s ease;
++    }
++    
++    .social-links a:hover {
++      background: #42b983;
++      color: white;
++      transform: translateY(-3px);
++    }
++    
++    .feature-grid {
++      display: grid;
++      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
++      gap: 2rem;
++      margin: 3rem 0;
++    }
++    
++    .feature-card {
++      background: white;
++      border-radius: 12px;
++      padding: 2rem;
++      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
++      transition: all 0.3s ease;
++      text-align: center;
++    }
++    
++    .feature-card:hover {
++      transform: translateY(-5px);
++      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
++    }
++    
++    .feature-icon {
++      font-size: 3rem;
++      color: #42b983;
++      margin-bottom: 1.5rem;
++    }
++    
++    .feature-card h3 {
++      color: #2c3e50;
++      margin-bottom: 1rem;
++    }
++    
++    .feature-card p {
++      color: #4a5568;
++      line-height: 1.6;
++    }
++    
++    .update-footer {
++      text-align: center;
++      margin-top: 3rem;
++      padding: 1.5rem;
++      background: #f0f7fb;
++      border-radius: 12px;
++      color: #4a5568;
++      font-size: 0.95rem;
++    }
++    
++    .update-footer strong {
++      color: #42b983;
++    }
++    
++    .stats-container {
++      display: flex;
++      justify-content: space-around;
++      flex-wrap: wrap;
++      margin: 2rem 0;
++      gap: 1.5rem;
++    }
++    
++    .stat-card {
++      background: white;
++      border-radius: 12px;
++      padding: 1.5rem;
++      text-align: center;
++      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
++      flex: 1;
++      min-width: 150px;
++    }
++    
++    .stat-number {
++      font-size: 2.5rem;
++      font-weight: 700;
++      color: #42b983;
++      margin-bottom: 0.5rem;
++    }
++    
++    .stat-label {
++      color: #4a5568;
++      font-size: 1rem;
++    }
++    
++    @media (max-width: 768px) {
++      .markdown-section {
++        padding: 1.5rem;
++        margin: 1rem;
++      }
++      
++      .cover-main h1 {
++        font-size: 2.5rem;
++      }
++      
++      .cover-main p {
++        font-size: 1.2rem;
++      }
++      
++      .contact-container {
++        padding: 1.5rem;
++        margin: 1.5rem;
++      }
+-
++  
+-      name: 'JG Admin task',
++      name: '<span style="color:#42b983">JG</span> Documentation',
+-      coverpage: 'cover.md',
++      coverpage: true,
+-      themeColor: '#3eaf7c',
+-      formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
++      themeColor: '#42b983',
++      formatUpdated: '{DD}/{MM}/{YYYY} [pukul] {HH}:{mm}',
+-        placeholder: 'Search...',
+-        noData: 'No results!',
++        placeholder: 'Cari dokumentasi...',
++        noData: 'Tidak ditemukan hasil!',
+-            return html + '\n\n<footer>Updated: {docsify-updated}</footer>';
++            return html + '\n\n<div class="update-footer">Terakhir diperbarui: <strong>{docsify-updated}</strong></div>';
++          });
++          
++          hook.doneEach(function() {
++            const updateElements = document.querySelectorAll('.update-footer strong');
++            if (updateElements.length > 0) {
++              const currentDate = new Date();
++              const formattedDate = `${String(currentDate.getDate()).padStart(2, '0')}/${String(currentDate.getMonth() + 1).padStart(2, '0')}/${currentDate.getFullYear()} pukul ${String(currentDate.getHours()).padStart(2, '0')}:${String(currentDate.getMinutes()).padStart(2, '0')}`;
++              
++              updateElements.forEach(el => {
++                el.textContent = formattedDate;
++              });
++            }
++  
+-
+-      const subject = encodeURIComponent("New message from " + name);
+-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+-
++      
++      if (!name || !email || !message) {
++        alert('Mohon lengkapi semua field!');
++        return;
++      }
++      
++      const subject = encodeURIComponent("Pesan Baru dari " + name);
++      const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\n\n${message}`);
++      
+-
++  
+-  <script
+-    src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse@latest/dist/docsify-sidebar-collapse.min.js"></script>
++  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse@latest/dist/docsify-sidebar-collapse.min.js"></script>
+-  <script
+-    src="https://cdn.jsdelivr.net/npm/docsify-flexible-alerts@latest/dist/docsify-flexible-alerts.min.js"></script>
++  <script src="https://cdn.jsdelivr.net/npm/docsify-flexible-alerts@latest/dist/docsify-flexible-alerts.min.js"></script>
++  
++  <script>
++    // Inisialisasi Docsify
++    document.addEventListener('DOMContentLoaded', function() {
++      // Tambahkan cover page secara dinamis
++      if (window.$docsify.coverpage) {
++        const app = document.getElementById('app');
++        app.innerHTML = `
++          <section class="cover-main">
++            <div class="cover-content">
++              <h1>Documentation Learning With JG</h1>
++              <p>Pusat dokumentasi pembelajaran untuk pengembangan web modern</p>
++              <a href="#/README" class="btn">Mulai Belajar</a>
++            </div>
++          </section>
++          <div class="feature-grid">
++            <div class="feature-card">
++              <div class="feature-icon">
++                <i class="fas fa-book-open"></i>
++              </div>
++              <h3>Dokumentasi Lengkap</h3>
++              <p>Panduan komprehensif untuk berbagai topik pengembangan web</p>
++            </div>
++            <div class="feature-card">
++              <div class="feature-icon">
++                <i class="fas fa-code"></i>
++              </div>
++              <h3>Contoh Kode</h3>
++              <p>Berbagai contoh kode praktis yang siap digunakan</p>
++            </div>
++            <div class="feature-card">
++              <div class="feature-icon">
++                <i class="fas fa-lightbulb"></i>
++              </div>
++              <h3>Tips & Trik</h3>
++              <p>Strategi efektif untuk meningkatkan produktivitas</p>
++            </div>
++          </div>
++          <div class="stats-container">
++            <div class="stat-card">
++              <div class="stat-number">50+</div>
++              <div class="stat-label">Topik Pembelajaran</div>
++            </div>
++            <div class="stat-card">
++              <div class="stat-number">120+</div>
++              <div class="stat-label">Contoh Kode</div>
++            </div>
++            <div class="stat-card">
++              <div class="stat-number">8</div>
++              <div class="stat-label">Kategori Utama</div>
++            </div>
++          </div>
++          <div class="contact-container">
++            <h2>Hubungi Kami</h2>
++            <p>Punya pertanyaan atau masukan? Silakan kirim pesan kepada kami</p>
++            <form class="contact-form" onsubmit="sendMail(event)">
++              <div class="form-group">
++                <label for="name">Nama</label>
++                <input type="text" id="name" placeholder="Masukkan nama Anda" required>
++              </div>
++              <div class="form-group">
++                <label for="email">Email</label>
++                <input type="email" id="email" placeholder="Masukkan email Anda" required>
++              </div>
++              <div class="form-group">
++                <label for="message">Pesan</label>
++                <textarea id="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
++              </div>
++              <button type="submit">Kirim Pesan</button>
++            </form>
++            <div class="social-links">
++              <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
++              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
++              <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
++              <a href="mailto:info@example.com"><i class="fas fa-envelope"></i></a>
++            </div>
++          </div>
++          <div class="update-footer">Terakhir diperbarui: <strong>Loading...</strong></div>
++        `;
++      }
++    });
++  </script>
+-
+diff --git a/quickstart.md b/quickstart.md
+new file mode 100644
+index 0000000..e69de29
+```
+</details>
+

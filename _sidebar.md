@@ -1,2 +1,5 @@
 - [homepage](/)
-- []
+- [quickstart](./quickstart.md)
+- [Changelogs](./CHANGELOG.MD)
+- [LICENSE](LICENSE.md)
+- [CODC](./CODE_OF_CONDUCT.md)

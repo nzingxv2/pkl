@@ -1,0 +1,3 @@
+- [About Author](https://about-riduwan.netlify.app)
+- [Contac Us](_contacUs.md)
+- [Juragan Gadai](https://www.juragangadai.com/IDN/)

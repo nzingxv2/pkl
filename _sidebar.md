@@ -1,2 +1,2 @@
-- [homepagae](/)
-- [changelogs](/changelogs.md)
+- [homepage](/)
+- []
